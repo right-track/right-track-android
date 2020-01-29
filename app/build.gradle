@@ -29,7 +29,7 @@ def twaManifest = [
     launchUrl: "/${agency}", // The start path for the TWA. Must be relative to the domain.
     name: "Right Track: ${appName}", // The name shown on the Android Launcher.
     themeColor: "${primaryColor}", // The color used for the status bar.
-    navigationColor: "${secondaryColor}", // The color used for the navigation bar.
+    navigationColor: "${primaryColor}", // The color used for the navigation bar.
     backgroundColor: "${primaryColor}", // The color used for the splash screen background.
     enableNotifications: false, // Set to true to enable notification delegation.
     // Add shortcuts for your app here. Every shortcut must include the following fields:
