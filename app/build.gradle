@@ -18,10 +18,10 @@ import groovy.xml.MarkupBuilder;
 
 apply plugin: 'com.android.application'
 
-def agency = "AGENCY_CODE"
-def appName = "APP NAME"
-def primaryColor = "#00897B"
-def secondaryColor = "#FFC107"
+def agency = "lirr"
+def appName = "LIRR"
+def primaryColor = "#0f47a1"
+def secondaryColor = "#ffd54f"
 
 def twaManifest = [
     applicationId: "io.righttrack.${agency}",
