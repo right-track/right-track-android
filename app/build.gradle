@@ -26,7 +26,7 @@ def secondaryColor = "#ffd54f"
 def twaManifest = [
     applicationId: "io.righttrack.${agency}",
     hostName: "www.righttrack.io", // The domain being opened in the TWA.
-    launchUrl: "/{agency}", // The start path for the TWA. Must be relative to the domain.
+    launchUrl: "/${agency}", // The start path for the TWA. Must be relative to the domain.
     name: "Right Track: ${appName}", // The name shown on the Android Launcher.
     themeColor: "${primaryColor}", // The color used for the status bar.
     navigationColor: "${secondaryColor}", // The color used for the navigation bar.
