@@ -18,14 +18,19 @@ import groovy.xml.MarkupBuilder;
 
 apply plugin: 'com.android.application'
 
+def agency = "AGENCY_CODE"
+def appName = "APP NAME"
+def primaryColor = "#00897B"
+def secondaryColor = "#FFC107"
+
 def twaManifest = [
-    applicationId: 'org.chromium.twa.svgomg',
-    hostName: 'svgomg.firebaseapp.com', // The domain being opened in the TWA.
-    launchUrl: '/', // The start path for the TWA. Must be relative to the domain.
-    name: 'SVGOMG TWA', // The name shown on the Android Launcher.
-    themeColor: '#303F9F', // The color used for the status bar.
-    navigationColor: '#303F9F', // The color used for the navigation bar.
-    backgroundColor: '#bababa', // The color used for the splash screen background.
+    applicationId: "io.righttrack.${agency}",
+    hostName: "www.righttrack.io", // The domain being opened in the TWA.
+    launchUrl: "/{agency}", // The start path for the TWA. Must be relative to the domain.
+    name: "Right Track: ${appName}", // The name shown on the Android Launcher.
+    themeColor: "${primaryColor}", // The color used for the status bar.
+    navigationColor: "${secondaryColor}", // The color used for the navigation bar.
+    backgroundColor: "${primaryColor}", // The color used for the splash screen background.
     enableNotifications: false, // Set to true to enable notification delegation.
     // Add shortcuts for your app here. Every shortcut must include the following fields:
     // - name: String that will show up in the shortcut.
@@ -33,8 +38,10 @@ def twaManifest = [
     // - url: Absolute path of the URL to launch the app with (e.g '/create').
     // - icon: Name of the resource in the drawable folder to use as an icon.
     shortcuts: [
-        // Insert shortcuts here, for example:
-        // [name: 'Open SVG', short_name: 'Open', url: '/open', icon: 'splash']
+        [name: "Favorites", short_name: "Favorites", url: "/${agency}", icon: "splash"],
+        [name: "Stations", short_name: "Stations", url: "/${agency}/stations", icon: "splash"],
+        [name: "Trips", short_name: "Trips", url: "/${agency}/trips", icon: "splash"],
+        [name: "Alerts", short_name: "Alerts", url: "/${agency}/alerts", icon: "splash"]
     ],
     // The duration of fade out animation in milliseconds to be played when removing splash screen.
     splashScreenFadeOutDuration: 300
@@ -46,8 +53,8 @@ android {
         applicationId twaManifest.applicationId
         minSdkVersion 16
         targetSdkVersion 29
-        versionCode 3
-        versionName "2.0.0"
+        versionCode 4
+        versionName "4.0.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
         // The name for the application on the Android Launcher
