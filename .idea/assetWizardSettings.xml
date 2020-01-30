@@ -62,9 +62,7 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
-                                      <entry key="backgroundColor" value="c62828" />
                                       <entry key="foregroundImage" value="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/splash.png" />
-                                      <entry key="legacyIconShape" value="CIRCLE" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -80,12 +78,30 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="color" value="000000" />
+                                                <entry key="color" value="ffffff" />
+                                                <entry key="paddingPercent" value="10" />
                                               </map>
                                             </option>
                                           </PersistentState>
                                         </value>
                                       </entry>
+                                      <entry key="clipartAsset">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="url" value="jar:file:/opt/android-studio/plugins/android/lib/android.jar!/images/material_design_icons/alert/ic_warning_black_24dp.xml" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
+                                    </map>
+                                  </option>
+                                  <option name="values">
+                                    <map>
+                                      <entry key="backgroundColor" value="c62828" />
+                                      <entry key="outputName" value="ic_warning" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -112,6 +128,11 @@
                                 </PersistentState>
                               </value>
                             </entry>
+                          </map>
+                        </option>
+                        <option name="values">
+                          <map>
+                            <entry key="outputIconType" value="LAUNCHER_LEGACY" />
                           </map>
                         </option>
                       </PersistentState>

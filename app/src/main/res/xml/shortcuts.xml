@@ -1,17 +1,17 @@
 <shortcuts xmlns:android='http://schemas.android.com/apk/res/android'>
-    <shortcut android:shortcutId='shortcut0' android:enabled='true' android:icon='@drawable/splash' android:shortcutShortLabel='@string/shortcut_short_name_0' android:shortcutLongLabel='@string/shortcut_name_0'>
+    <shortcut android:shortcutId='shortcut0' android:enabled='true' android:icon='@drawable/ic_star' android:shortcutShortLabel='@string/shortcut_short_name_0' android:shortcutLongLabel='@string/shortcut_name_0'>
         <intent android:action='android.intent.action.MAIN' android:targetPackage='io.righttrack.mnr' android:targetClass='android.support.customtabs.trusted.LauncherActivity' android:data='https://www.righttrack.io/mnr' />
         <categories android:name='android.intent.category.LAUNCHER' />
     </shortcut>
-    <shortcut android:shortcutId='shortcut1' android:enabled='true' android:icon='@drawable/splash' android:shortcutShortLabel='@string/shortcut_short_name_1' android:shortcutLongLabel='@string/shortcut_name_1'>
+    <shortcut android:shortcutId='shortcut1' android:enabled='true' android:icon='@drawable/ic_access_time' android:shortcutShortLabel='@string/shortcut_short_name_1' android:shortcutLongLabel='@string/shortcut_name_1'>
         <intent android:action='android.intent.action.MAIN' android:targetPackage='io.righttrack.mnr' android:targetClass='android.support.customtabs.trusted.LauncherActivity' android:data='https://www.righttrack.io/mnr/stations' />
         <categories android:name='android.intent.category.LAUNCHER' />
     </shortcut>
-    <shortcut android:shortcutId='shortcut2' android:enabled='true' android:icon='@drawable/splash' android:shortcutShortLabel='@string/shortcut_short_name_2' android:shortcutLongLabel='@string/shortcut_name_2'>
+    <shortcut android:shortcutId='shortcut2' android:enabled='true' android:icon='@drawable/ic_train' android:shortcutShortLabel='@string/shortcut_short_name_2' android:shortcutLongLabel='@string/shortcut_name_2'>
         <intent android:action='android.intent.action.MAIN' android:targetPackage='io.righttrack.mnr' android:targetClass='android.support.customtabs.trusted.LauncherActivity' android:data='https://www.righttrack.io/mnr/trips' />
         <categories android:name='android.intent.category.LAUNCHER' />
     </shortcut>
-    <shortcut android:shortcutId='shortcut3' android:enabled='true' android:icon='@drawable/splash' android:shortcutShortLabel='@string/shortcut_short_name_3' android:shortcutLongLabel='@string/shortcut_name_3'>
+    <shortcut android:shortcutId='shortcut3' android:enabled='true' android:icon='@drawable/ic_warning' android:shortcutShortLabel='@string/shortcut_short_name_3' android:shortcutLongLabel='@string/shortcut_name_3'>
         <intent android:action='android.intent.action.MAIN' android:targetPackage='io.righttrack.mnr' android:targetClass='android.support.customtabs.trusted.LauncherActivity' android:data='https://www.righttrack.io/mnr/alerts' />
         <categories android:name='android.intent.category.LAUNCHER' />
     </shortcut>

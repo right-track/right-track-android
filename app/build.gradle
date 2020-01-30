@@ -38,10 +38,10 @@ def twaManifest = [
     // - url: Absolute path of the URL to launch the app with (e.g '/create').
     // - icon: Name of the resource in the drawable folder to use as an icon.
     shortcuts: [
-        [name: "Favorites", short_name: "Favorites", url: "/${agency}", icon: "splash"],
-        [name: "Stations", short_name: "Stations", url: "/${agency}/stations", icon: "splash"],
-        [name: "Trips", short_name: "Trips", url: "/${agency}/trips", icon: "splash"],
-        [name: "Alerts", short_name: "Alerts", url: "/${agency}/alerts", icon: "splash"]
+        [name: "Favorites", short_name: "Favorites", url: "/${agency}", icon: "ic_star"],
+        [name: "Stations", short_name: "Stations", url: "/${agency}/stations", icon: "ic_access_time"],
+        [name: "Trips", short_name: "Trips", url: "/${agency}/trips", icon: "ic_train"],
+        [name: "Alerts", short_name: "Alerts", url: "/${agency}/alerts", icon: "ic_warning"]
     ],
     // The duration of fade out animation in milliseconds to be played when removing splash screen.
     splashScreenFadeOutDuration: 300
